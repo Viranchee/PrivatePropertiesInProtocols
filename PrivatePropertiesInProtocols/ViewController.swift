@@ -10,8 +10,9 @@ import UIKit
 
 final class ViewController: UIViewController {
     
-    typealias VideoCell = GenericTableViewCell<LabelView>
+    typealias TableCell = TableCellTableViewCell
     
+    private let reuseID = "cell"
     private let tableView = UITableView()
     
     override func viewDidLoad() {
@@ -21,8 +22,7 @@ final class ViewController: UIViewController {
 
     private func setupTableView() {
         tableView.dataSource = self
-        tableView.registerCell(VideoCell.self)
-        
+        tableView.register(TableCell.self, forCellReuseIdentifier: reuseID)
         view.addSubview(tableView)
         tableView.pinEdgesToSuperview()
     }
@@ -35,7 +35,8 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = VideoCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseID, for: indexPath) as! TableCell
+        
         return cell
     }
 }
