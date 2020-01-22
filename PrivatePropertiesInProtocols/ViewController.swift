@@ -10,7 +10,7 @@ import UIKit
 
 final class ViewController: UIViewController {
     
-    typealias VideoCell = GenericTableViewCell<VideoView>
+    typealias VideoCell = GenericTableViewCell<LabelView>
     
     private let tableView = UITableView()
     
@@ -21,7 +21,6 @@ final class ViewController: UIViewController {
 
     private func setupTableView() {
         tableView.dataSource = self
-        tableView.delegate = self
         tableView.registerCell(VideoCell.self)
         
         view.addSubview(tableView)
@@ -39,8 +38,4 @@ extension ViewController: UITableViewDataSource {
         let cell = VideoCell()
         return cell
     }
-}
-
-extension ViewController: UITableViewDelegate {
-    
 }

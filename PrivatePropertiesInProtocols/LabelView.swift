@@ -1,5 +1,5 @@
 //
-//  VideoView.swift
+//  LabelView.swift
 //  PrivatePropertiesInProtocols
 //
 //  Created by Viranchee L on 22/01/20.
@@ -9,12 +9,13 @@
 import UIKit
 import AVFoundation
 
-final class VideoView: UIView {
-    let player = AVPlayer()
+final class LabelView: UIView {
+    
+    let label = UILabel()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+        setupView()
     }
     
     required init?(coder: NSCoder) {
@@ -26,5 +27,3 @@ final class VideoView: UIView {
     }
     
 }
-
-
