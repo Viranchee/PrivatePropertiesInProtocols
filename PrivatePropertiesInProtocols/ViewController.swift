@@ -8,13 +8,39 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+final class ViewController: UIViewController {
+    
+    typealias VideoCell = GenericTableViewCell<VideoView>
+    
+    private let tableView = UITableView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setupTableView()
     }
 
+    private func setupTableView() {
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.registerCell(VideoCell.self)
+        
+        view.addSubview(tableView)
+        tableView.pinEdgesToSuperview()
+    }
 
 }
 
+extension ViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = VideoCell()
+        return cell
+    }
+}
+
+extension ViewController: UITableViewDelegate {
+    
+}
