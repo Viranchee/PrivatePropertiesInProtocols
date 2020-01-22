@@ -15,14 +15,14 @@ protocol LabelSettable: class {
 }
 
 protocol UILabelSettable: LabelSettable {
-    var label: UILabel { get }
+    var label: UILabel! { get }
 }
 
 extension UILabelSettable {
     func setLabelText(_ text: String) {
         label.text = text
     }
-    
+
     func getLabelText() -> String {
         return label.text ?? ""
     }
