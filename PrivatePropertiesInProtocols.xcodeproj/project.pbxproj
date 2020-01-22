@@ -60,9 +60,9 @@
 			isa = PBXGroup;
 			children = (
 				008E094923D85E9A00193C74 /* ViewController.swift */,
+				0007BFBF23D89121005C99D7 /* TableCellTableViewCell.swift */,
 				008E094B23D85E9A00193C74 /* Main.storyboard */,
 				008E095023D85E9E00193C74 /* LaunchScreen.storyboard */,
-				0007BFBF23D89121005C99D7 /* TableCellTableViewCell.swift */,
 				0007BFB823D88B63005C99D7 /* TableCellTableViewCell.xib */,
 			);
 			path = Views;

@@ -14,4 +14,3 @@
 // sourcery:end
 
 {% endfor %}
-

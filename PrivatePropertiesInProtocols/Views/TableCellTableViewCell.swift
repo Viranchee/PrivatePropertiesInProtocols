@@ -25,14 +25,21 @@ class TableCellTableViewCell: UITableViewCell, UILabelSettable {
     
 
 // sourcery:inline:auto:TableCellTableViewCell.UILabelSettable
+
 // MARK: - Sourcery UILabelSettable
 
+
         func setLabelText(_ text: String) {
+
             label.text = text
+
         }
 
+
         func getLabelText() -> String {
+
             return label.text ?? ""
+
         }
 // sourcery:end
 }
