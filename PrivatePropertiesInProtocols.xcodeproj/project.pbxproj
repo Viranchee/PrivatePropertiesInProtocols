@@ -52,6 +52,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0007BFC323D8946C005C99D7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				008E094923D85E9A00193C74 /* ViewController.swift */,
+				0007BFBF23D89121005C99D7 /* TableCellTableViewCell.swift */,
+				0007BFB823D88B63005C99D7 /* TableCellTableViewCell.xib */,
+				008E094B23D85E9A00193C74 /* Main.storyboard */,
+				008E095023D85E9E00193C74 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0007BFC423D8947A005C99D7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0007BFC123D8915B005C99D7 /* TableViewExtension.swift */,
+				0007BFAB23D860C0005C99D7 /* AutoLayout.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0007BFC523D89488005C99D7 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				008E094523D85E9A00193C74 /* AppDelegate.swift */,
+				008E094723D85E9A00193C74 /* SceneDelegate.swift */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		0007BFC623D894D7005C99D7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0007BFAF23D8622F005C99D7 /* LabelSettable.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		008E093923D85E9A00193C74 = {
 			isa = PBXGroup;
 			children = (
@@ -73,17 +111,11 @@
 		008E094423D85E9A00193C74 /* PrivatePropertiesInProtocols */ = {
 			isa = PBXGroup;
 			children = (
-				008E094523D85E9A00193C74 /* AppDelegate.swift */,
-				008E094723D85E9A00193C74 /* SceneDelegate.swift */,
-				008E094923D85E9A00193C74 /* ViewController.swift */,
-				0007BFC123D8915B005C99D7 /* TableViewExtension.swift */,
-				0007BFB823D88B63005C99D7 /* TableCellTableViewCell.xib */,
-				0007BFAF23D8622F005C99D7 /* LabelSettable.swift */,
-				0007BFBF23D89121005C99D7 /* TableCellTableViewCell.swift */,
-				0007BFAB23D860C0005C99D7 /* AutoLayout.swift */,
-				008E094B23D85E9A00193C74 /* Main.storyboard */,
+				0007BFC523D89488005C99D7 /* Singleton */,
+				0007BFC323D8946C005C99D7 /* Views */,
+				0007BFC423D8947A005C99D7 /* Helpers */,
+				0007BFC623D894D7005C99D7 /* Models */,
 				008E094E23D85E9E00193C74 /* Assets.xcassets */,
-				008E095023D85E9E00193C74 /* LaunchScreen.storyboard */,
 				008E095323D85E9E00193C74 /* Info.plist */,
 			);
 			path = PrivatePropertiesInProtocols;
