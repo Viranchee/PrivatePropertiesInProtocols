@@ -1,0 +1,8 @@
+
+sources:
+    - PrivatePropertiesInProtocols/Views
+    - PrivatePropertiesInProtocols/Helpers
+templates:
+    - PrivatePropertiesInProtocols/SourceryTemplates
+output: SourceryGenerated
+

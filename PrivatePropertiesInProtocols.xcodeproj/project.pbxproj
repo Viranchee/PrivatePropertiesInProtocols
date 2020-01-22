@@ -12,7 +12,8 @@
 		0007BFC023D89121005C99D7 /* TableCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0007BFBF23D89121005C99D7 /* TableCellTableViewCell.swift */; };
 		0007BFC223D8915B005C99D7 /* TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0007BFC123D8915B005C99D7 /* TableViewExtension.swift */; };
 		0007BFCA23D89B72005C99D7 /* LabelSettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0007BFC923D89B72005C99D7 /* LabelSettable.swift */; };
-		0007BFCC23D89C0D005C99D7 /* LabelSettable.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0007BFCB23D89C0D005C99D7 /* LabelSettable.txt */; };
+		0007BFCC23D89C0D005C99D7 /* LabelSettable.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 0007BFCB23D89C0D005C99D7 /* LabelSettable.stencil */; };
+		0007BFCF23D89F86005C99D7 /* .sourcery.yml in Resources */ = {isa = PBXBuildFile; fileRef = 0007BFCE23D89F86005C99D7 /* .sourcery.yml */; };
 		008E094623D85E9A00193C74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008E094523D85E9A00193C74 /* AppDelegate.swift */; };
 		008E094823D85E9A00193C74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008E094723D85E9A00193C74 /* SceneDelegate.swift */; };
 		008E094A23D85E9A00193C74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008E094923D85E9A00193C74 /* ViewController.swift */; };
@@ -28,7 +29,8 @@
 		0007BFBF23D89121005C99D7 /* TableCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellTableViewCell.swift; sourceTree = "<group>"; };
 		0007BFC123D8915B005C99D7 /* TableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExtension.swift; sourceTree = "<group>"; };
 		0007BFC923D89B72005C99D7 /* LabelSettable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelSettable.swift; sourceTree = "<group>"; };
-		0007BFCB23D89C0D005C99D7 /* LabelSettable.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LabelSettable.txt; sourceTree = "<group>"; };
+		0007BFCB23D89C0D005C99D7 /* LabelSettable.stencil */ = {isa = PBXFileReference; lastKnownFileType = text; path = LabelSettable.stencil; sourceTree = "<group>"; };
+		0007BFCE23D89F86005C99D7 /* .sourcery.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .sourcery.yml; sourceTree = SOURCE_ROOT; };
 		008E094223D85E9A00193C74 /* PrivatePropertiesInProtocols.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrivatePropertiesInProtocols.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		008E094523D85E9A00193C74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		008E094723D85E9A00193C74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,7 +90,7 @@
 		0007BFC623D894D7005C99D7 /* SourceryTemplates */ = {
 			isa = PBXGroup;
 			children = (
-				0007BFCB23D89C0D005C99D7 /* LabelSettable.txt */,
+				0007BFCB23D89C0D005C99D7 /* LabelSettable.stencil */,
 			);
 			path = SourceryTemplates;
 			sourceTree = "<group>";
@@ -120,6 +122,7 @@
 				0007BFC623D894D7005C99D7 /* SourceryTemplates */,
 				008E094E23D85E9E00193C74 /* Assets.xcassets */,
 				008E095323D85E9E00193C74 /* Info.plist */,
+				0007BFCE23D89F86005C99D7 /* .sourcery.yml */,
 			);
 			path = PrivatePropertiesInProtocols;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			buildConfigurationList = 008E095623D85E9E00193C74 /* Build configuration list for PBXNativeTarget "PrivatePropertiesInProtocols" */;
 			buildPhases = (
 				65D7A59A7E63B152D3E76A7C /* [CP] Check Pods Manifest.lock */,
+				0007BFCD23D89F10005C99D7 /* Sourcery */,
 				008E093E23D85E9A00193C74 /* Sources */,
 				008E093F23D85E9A00193C74 /* Frameworks */,
 				008E094023D85E9A00193C74 /* Resources */,
@@ -201,7 +205,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				008E095223D85E9E00193C74 /* LaunchScreen.storyboard in Resources */,
-				0007BFCC23D89C0D005C99D7 /* LabelSettable.txt in Resources */,
+				0007BFCF23D89F86005C99D7 /* .sourcery.yml in Resources */,
+				0007BFCC23D89C0D005C99D7 /* LabelSettable.stencil in Resources */,
 				008E094F23D85E9E00193C74 /* Assets.xcassets in Resources */,
 				0007BFBA23D88B63005C99D7 /* TableCellTableViewCell.xib in Resources */,
 				008E094D23D85E9A00193C74 /* Main.storyboard in Resources */,
@@ -211,6 +216,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0007BFCD23D89F10005C99D7 /* Sourcery */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Sourcery;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n$PODS_ROOT/Sourcery/bin/sourcery --config ${PROJECT_DIR}\n";
+		};
 		65D7A59A7E63B152D3E76A7C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
