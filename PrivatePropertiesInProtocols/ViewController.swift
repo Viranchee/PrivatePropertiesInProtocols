@@ -10,8 +10,6 @@ import UIKit
 
 final class ViewController: UIViewController {
     
-    typealias TableCell = TableCellTableViewCell
-    
     private let reuseID = "cell"
     private let tableView = UITableView()
     
@@ -22,7 +20,7 @@ final class ViewController: UIViewController {
 
     private func setupTableView() {
         tableView.dataSource = self
-        tableView.register(TableCell.self, forCellReuseIdentifier: reuseID)
+        tableView.registerNib(TableCellTableViewCell.self)
         view.addSubview(tableView)
         tableView.pinEdgesToSuperview()
     }
@@ -35,8 +33,8 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: reuseID, for: indexPath) as! TableCell
-        
+        let cell: TableCellTableViewCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
+        cell.label.text = "WTF"
         return cell
     }
 }
