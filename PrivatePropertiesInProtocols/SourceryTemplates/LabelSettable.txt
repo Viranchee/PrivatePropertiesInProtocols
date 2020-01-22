@@ -1,0 +1,17 @@
+{% for type in types.implementing.UILabelSettable %}
+// sourcery:inline:auto:{{ type.name }}.UILabelSettable
+    
+// MARK: - Sourcery UILabelSettable
+
+        func setLabelText(_ text: String) {
+            label.text = text
+        }
+
+        func getLabelText() -> String {
+            return label.text ?? ""
+        }
+       
+// sourcery:end
+
+{% endfor %}
+
