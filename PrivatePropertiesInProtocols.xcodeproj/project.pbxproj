@@ -61,9 +61,6 @@
 			children = (
 				008E094923D85E9A00193C74 /* ViewController.swift */,
 				0007BFBF23D89121005C99D7 /* TableCellTableViewCell.swift */,
-				008E094B23D85E9A00193C74 /* Main.storyboard */,
-				008E095023D85E9E00193C74 /* LaunchScreen.storyboard */,
-				0007BFB823D88B63005C99D7 /* TableCellTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -95,6 +92,16 @@
 			path = SourceryTemplates;
 			sourceTree = "<group>";
 		};
+		0007BFD023D8AB34005C99D7 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				008E094B23D85E9A00193C74 /* Main.storyboard */,
+				008E095023D85E9E00193C74 /* LaunchScreen.storyboard */,
+				0007BFB823D88B63005C99D7 /* TableCellTableViewCell.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
 		008E093923D85E9A00193C74 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				0007BFC523D89488005C99D7 /* Singleton */,
+				0007BFD023D8AB34005C99D7 /* XIBs */,
 				0007BFC323D8946C005C99D7 /* Views */,
 				0007BFC423D8947A005C99D7 /* Helpers */,
 				0007BFC623D894D7005C99D7 /* SourceryTemplates */,
