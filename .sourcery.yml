@@ -4,3 +4,5 @@ sources:
 templates:
     - PrivatePropertiesInProtocols/SourceryTemplates
 output: SourceryGenerated
+prune: true
+
