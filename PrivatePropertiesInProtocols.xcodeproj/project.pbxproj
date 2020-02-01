@@ -20,6 +20,7 @@
 		008E094D23D85E9A00193C74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 008E094B23D85E9A00193C74 /* Main.storyboard */; };
 		008E094F23D85E9E00193C74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 008E094E23D85E9E00193C74 /* Assets.xcassets */; };
 		008E095223D85E9E00193C74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 008E095023D85E9E00193C74 /* LaunchScreen.storyboard */; };
+		00C5340623E60B4D00D17B26 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 00C5340523E60B4D00D17B26 /* README.md */; };
 		CF68FDD406F0173F57470B4C /* Pods_PrivatePropertiesInProtocols.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4603ACF5ECD5D323E23AEB3 /* Pods_PrivatePropertiesInProtocols.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		008E094E23D85E9E00193C74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		008E095123D85E9E00193C74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		008E095323D85E9E00193C74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00C5340523E60B4D00D17B26 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0ED512072AF2DEB93201BCE0 /* Pods-PrivatePropertiesInProtocols.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrivatePropertiesInProtocols.debug.xcconfig"; path = "Target Support Files/Pods-PrivatePropertiesInProtocols/Pods-PrivatePropertiesInProtocols.debug.xcconfig"; sourceTree = "<group>"; };
 		726ADED5EAE26334C75CBB9A /* Pods-PrivatePropertiesInProtocols.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrivatePropertiesInProtocols.release.xcconfig"; path = "Target Support Files/Pods-PrivatePropertiesInProtocols/Pods-PrivatePropertiesInProtocols.release.xcconfig"; sourceTree = "<group>"; };
 		D4603ACF5ECD5D323E23AEB3 /* Pods_PrivatePropertiesInProtocols.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrivatePropertiesInProtocols.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +107,7 @@
 		008E093923D85E9A00193C74 = {
 			isa = PBXGroup;
 			children = (
+				00C5340523E60B4D00D17B26 /* README.md */,
 				008E094423D85E9A00193C74 /* PrivatePropertiesInProtocols */,
 				008E094323D85E9A00193C74 /* Products */,
 				CE7C2D976377E3F63BB5E696 /* Pods */,
@@ -215,6 +218,7 @@
 				008E095223D85E9E00193C74 /* LaunchScreen.storyboard in Resources */,
 				0007BFCF23D89F86005C99D7 /* .sourcery.yml in Resources */,
 				0007BFCC23D89C0D005C99D7 /* LabelSettable.stencil in Resources */,
+				00C5340623E60B4D00D17B26 /* README.md in Resources */,
 				008E094F23D85E9E00193C74 /* Assets.xcassets in Resources */,
 				0007BFBA23D88B63005C99D7 /* TableCellTableViewCell.xib in Resources */,
 				008E094D23D85E9A00193C74 /* Main.storyboard in Resources */,
