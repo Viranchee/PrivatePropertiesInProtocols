@@ -49,7 +49,7 @@ Mark that field in it's implementing class as `private`
 
 ### Step 5: There is no step 5
 
-There is no step 5. You have successfully implemented Private properties inside of protocols. If ever you change the field name, there will be compile time errors, which you will be forced to fix.
+You have successfully implemented Private properties inside of protocols. If ever you change the field name, there will be compile time errors, which you will be forced to fix.
 
 ## Practical Usage:
 
@@ -62,7 +62,9 @@ To have shared code to be at single place, I had to either:
 The 2nd option had a limitation, It was not composable.
 
 The 1st option had a limitation, since there were code reviews in the project I was working on, I was not allowed to expose UIViews outside of a class.
-Hence I had to come up with scalable and intuitive approach. I quickly figured out that Extensions of a Type have same access control where the Extension is declared in. I could not access the properties outside of the file.
+Hence I had to come up with scalable and intuitive approach. 
+I quickly figured out that Extensions of a Type have same access control where the Extension is declared in. 
+I could not access the properties outside of the file.
 This led to me coming up with a good use of Sourcery to Copy Paste the implementation in every file confirming to that Protocol.
 
 ## Thank You:
