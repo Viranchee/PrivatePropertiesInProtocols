@@ -34,7 +34,7 @@ Here, I am using Sourcery as Meta programming tool, and it's setup requires a Co
 
 This file contains the commands to pass to Sourcery
 
-#### The Template file: `<ProjectRoot>/SourceryTemplate/LabelSettable.stencil`:
+#### The Template file: `<ProjectRoot>/<ProjectName>/SourceryTemplate/LabelSettable.stencil`:
 
 This file contains behaviour for the templating tool. Here is where the instruction is to copy particular piece of code to  every type implementing / confirming to a Protocol
 
