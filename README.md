@@ -1,6 +1,14 @@
 # Private Properties in Protocols
 How to make types that confirm to protocols have private fields:
 
+The slides are attached in pdf format
+
+## How to use this project:
+- clone the repo
+- In terminal, at root of this directory, run `pod installl`
+- run `xed .` to open the workspace
+- compile the program and witness the magic!
+
 In Swift, the types which can confirm to a `Protocol` are:
 
 `Class`  `Struct`  `Enum` as well as another `Protocol` which is called Protocol Inheritance.
