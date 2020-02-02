@@ -91,7 +91,7 @@ This led to me coming up with a good use of Sourcery to Copy Paste the implement
  
 I am open for speaking opportunities on this topic. In the past, I have had explained local developers in Mumbai, as part of Swift Mumbai Community, can be found [here][swift-mumbai-event]
 
-Have an idea for an iOS App? I can make you a prototype. Let's connect [email]
+Have an idea for an iOS App? I can make you a prototype. Let's connect via [email]
 
 [twitter]: twitter.com/code_magician
 [email]: <viranchee@outlook.com>
