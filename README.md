@@ -88,8 +88,10 @@ This led to me coming up with a good use of Sourcery to Copy Paste the implement
 
 ## For the reader
  Want me to explain you or your coworkers on benefits of using this approach, you can always drop me an [email][email] or [tweet][twitter] me.
- 
-I am open for speaking opportunities on this topic. In the past, I have had explained local developers in Mumbai, as part of Swift Mumbai Community, can be found [here][swift-mumbai-event]
+
+Open for Speaking opportunities and Mentoring upcoming Mobile App developers🌟.
+
+I have given a community talk on this topic, more details -> [here][swift-mumbai-event]
 
 Have an idea for an iOS App? I can make you a prototype. Let's connect via [email]
 
