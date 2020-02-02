@@ -53,7 +53,7 @@ Remove the field requirement alltogether from the Protocol
 Since the field does not exist in the protocol, the protocol extension will complain of undefined field. 
 Hence to satisfy the compiler, remove that protocol extension.
 
-Mark that field in it's implementing class as `private`
+Mark that field in it's implementing type as `private`
 
 ### Step 5: There is no step 5
 
