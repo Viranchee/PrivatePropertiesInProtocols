@@ -48,7 +48,7 @@ This file contains behaviour for the templating tool. Here is where the instruct
 
 ### Step 4: Revert steps 1 and 2:
 
-Rremove the field requirement alltogether from the Protocol
+Remove the field requirement alltogether from the Protocol
 
 Since the field does not exist in the protocol, the protocol extension will complain of undefined field. 
 Hence to satisfy the compiler, remove that protocol extension.
