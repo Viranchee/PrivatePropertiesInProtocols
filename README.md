@@ -39,11 +39,11 @@ Protocol Extensions are default implementation for Types confirming to that Prot
 
 Here, I am using Sourcery as Meta programming tool, and it's setup requires a Configuration file, and a Template file.
 
-#### The [Config file](.sourcery.yml): `<ProjectRoot>/.sourcery.yml`:
+#### The [Config file](.sourcery.yml): `<ProjectRoot>/.sourcery.yml`
 
 This file contains the commands to pass to Sourcery
 
-#### The [Template file](/PrivatePropertiesInProtocols/SourceryTemplates/LabelSettable.stencil): `<ProjectRoot>/<ProjectName>/SourceryTemplate/LabelSettable.stencil`:
+#### The [Template file](/PrivatePropertiesInProtocols/SourceryTemplates/LabelSettable.stencil): `<ProjectRoot>/<ProjectName>/SourceryTemplate/LabelSettable.stencil`
 
 This file contains behaviour for the templating tool. Here is where the instruction is to copy particular piece of code to  every type implementing / confirming to a Protocol
 
@@ -61,13 +61,12 @@ Hence to satisfy the compiler, remove that protocol extension.
 
 Mark that field in it's implementing type as `private`
 
-### Step 5: There is no step 5
 
 You have successfully implemented Private properties inside of protocols. If ever you change the field name, there will be compile time errors, which you will be forced to fix.
 
-## Practical Usage:
+## Practical Usage
 
-#### Code sharing across multiple UIViews and UIViewControllers:
+#### Code sharing across multiple UIViews and UIViewControllers
 
 To have shared code to be at single place, I had to either:
 - Make fields public
@@ -81,8 +80,15 @@ I quickly figured out that Extensions of a Type have same access control where t
 I could not access the properties outside of the file.
 This led to me coming up with a good use of Sourcery to Copy Paste the implementation in every file confirming to that Protocol.
 
-## Thank You:
+## Thanks
 - [Yogesh Singh](https://twitter.com/_yogeshsingh), for mentoring and providing a platform to showcase my ideas
 - [Pointfree.co](https://pointfree.co), for improving my understanding of Programming, Composition, Functional Programming, Thinking about in terms of Software. 
 - [Krzysztof Zablocki](https://twitter.com/merowing_), for building [Sourcery](https://github.com/krzysztofzablocki/Sourcery), a library to automate swift code generation and encouraging Meta-programming 
 - Peer reviewers for not allowing me to expose UIViews. It is because of that I am able to come up with this research and write this blog post :)
+
+## For the reader
+ Want me to explain you or your coworkers on benefits of using this approach, you can always drop me an email <viranchee@outlook.com> or [tweet](twitter.com/code_magician) me.
+ 
+I am open for speaking opportunities on this topic.
+
+Have an idea for an iOS App? I can make you a prototype. Let's connect.
