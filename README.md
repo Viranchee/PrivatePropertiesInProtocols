@@ -83,8 +83,7 @@ This led to me coming up with a good use of Sourcery to Copy Paste the implement
 ## Thanks
 - [Yogesh Singh][yogesh], for mentoring and providing a platform to showcase my ideas
 - [Pointfree.co][pointfree], for improving my understanding of Programming, Composition, Functional Programming, Thinking about in terms of Software. 
-- [Krzysztof Zablocki][merowing], for building [sourcery], a library to automate swift code generation and encouraging Meta-programming 
-- Peer reviewers for not allowing me to expose UIViews. It is because of that I am able to come up with this research and write this blog post :)
+- [Krzysztof Zablocki][merowing], for building [sourcery], a library to automate swift code generation and encouraging Meta-programming
 
 ## For the reader
  Want me to explain you or your coworkers on benefits of using this approach, you can always drop me an [email][email] or [tweet][twitter] me.
