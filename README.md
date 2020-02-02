@@ -1,7 +1,7 @@
 # Private Properties in Protocols
 How to make types that confirm to protocols have private fields:
 
-The slides are attached in pdf format
+The slides are attached in pdf format [here](PrivatePropertiesInProtocols.pdf)
 
 ## How to use this project:
 - clone the repo
