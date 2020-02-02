@@ -5,7 +5,7 @@ The slides are attached in pdf format
 
 ## How to use this project:
 - clone the repo
-- In terminal, at root of this directory, run `pod install` in terminal
+- In terminal, at root of this directory, run `pod install` 
 - run `xed .`  in terminal to open the workspace
 - compile the program and witness the magic!
 
