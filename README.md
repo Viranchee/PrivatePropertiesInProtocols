@@ -1,7 +1,7 @@
 # Private Properties in Protocols
 How to make types that confirm to protocols have private fields:
 
-The slides are attached in pdf format [here](PrivatePropertiesInProtocols.pdf)
+The slides are attached in pdf format [here][slides]
 
 ## How to use this project:
 
@@ -39,11 +39,11 @@ Protocol Extensions are default implementation for Types confirming to that Prot
 
 Here, I am using Sourcery as Meta programming tool, and it's setup requires a Configuration file, and a Template file.
 
-#### The [Config file](.sourcery.yml): `<ProjectRoot>/.sourcery.yml`
+#### The [Config file][config-file]: `<ProjectRoot>/.sourcery.yml`
 
 This file contains the commands to pass to Sourcery
 
-#### The [Template file](/PrivatePropertiesInProtocols/SourceryTemplates/LabelSettable.stencil): `<ProjectRoot>/<ProjectName>/SourceryTemplate/LabelSettable.stencil`
+#### The [Template file][template]: `<ProjectRoot>/<ProjectName>/SourceryTemplate/LabelSettable.stencil`
 
 This file contains behaviour for the templating tool. Here is where the instruction is to copy particular piece of code to  every type implementing / confirming to a Protocol
 
@@ -81,14 +81,26 @@ I could not access the properties outside of the file.
 This led to me coming up with a good use of Sourcery to Copy Paste the implementation in every file confirming to that Protocol.
 
 ## Thanks
-- [Yogesh Singh](https://twitter.com/_yogeshsingh), for mentoring and providing a platform to showcase my ideas
-- [Pointfree.co](https://pointfree.co), for improving my understanding of Programming, Composition, Functional Programming, Thinking about in terms of Software. 
-- [Krzysztof Zablocki](https://twitter.com/merowing_), for building [Sourcery](https://github.com/krzysztofzablocki/Sourcery), a library to automate swift code generation and encouraging Meta-programming 
+- [Yogesh Singh][yogesh], for mentoring and providing a platform to showcase my ideas
+- [Pointfree.co][pointfree], for improving my understanding of Programming, Composition, Functional Programming, Thinking about in terms of Software. 
+- [Krzysztof Zablocki][merowing], for building [sourcery], a library to automate swift code generation and encouraging Meta-programming 
 - Peer reviewers for not allowing me to expose UIViews. It is because of that I am able to come up with this research and write this blog post :)
 
 ## For the reader
- Want me to explain you or your coworkers on benefits of using this approach, you can always drop me an email <viranchee@outlook.com> or [tweet](twitter.com/code_magician) me.
+ Want me to explain you or your coworkers on benefits of using this approach, you can always drop me an [email][email] or [tweet][twitter] me.
  
-I am open for speaking opportunities on this topic.
+I am open for speaking opportunities on this topic. In the past, I have had explained local developers in Mumbai, as part of Swift Mumbai Community, can be found [here][swift-mumbai-event]
 
-Have an idea for an iOS App? I can make you a prototype. Let's connect.
+Have an idea for an iOS App? I can make you a prototype. Let's connect [email]
+
+[twitter]: twitter.com/code_magician
+[email]: <viranchee@outlook.com>
+[sourcery]: https://github.com/krzysztofzablocki/Sourcery
+[pointfree]: https://pointfree.co
+[swift-mumbai-event]: https://www.meetup.com/SwiftMumbai/events/266462321/
+[merowing]: https://twitter.com/merowing_
+[yogesh]: https://twitter.com/_yogeshsingh
+
+[slides]: PrivatePropertiesInProtocols.pdf
+[template]: /PrivatePropertiesInProtocols/SourceryTemplates/LabelSettable.stencil
+[config-file]: .sourcery.yml
