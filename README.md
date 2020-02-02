@@ -76,7 +76,7 @@ I could not access the properties outside of the file.
 This led to me coming up with a good use of Sourcery to Copy Paste the implementation in every file confirming to that Protocol.
 
 ## Thank You:
-- Yogesh Singh, for mentoring and providing a platform to showcase my ideas
-- Pointfree.co, for improving my understanding of Programming, Composition, Functional Programming, Thinking about in terms of Software. 
-- Krzysztof Zablocki, for building Sourcery, a library to automate swift code generation and encouraging Meta-programming 
-- Peer reviewers for not allowing me to expose UIViews. It is because of that i am able to write this blog post :)
+- [Yogesh Singh](https://twitter.com/_yogeshsingh), for mentoring and providing a platform to showcase my ideas
+- [Pointfree.co](https://pointfree.co), for improving my understanding of Programming, Composition, Functional Programming, Thinking about in terms of Software. 
+- [Krzysztof Zablocki](https://twitter.com/merowing_), for building [Sourcery](https://github.com/krzysztofzablocki/Sourcery), a library to automate swift code generation and encouraging Meta-programming 
+- Peer reviewers for not allowing me to expose UIViews. It is because of that I am able to come up with this research and write this blog post :)
