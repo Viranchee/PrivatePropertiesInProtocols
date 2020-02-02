@@ -1,13 +1,14 @@
 # Private Properties in Protocols
 How to make types that confirm to protocols have private fields:
 
-The slides are attached in pdf format
+The slides are attached in pdf format [here](PrivatePropertiesInProtocols.pdf)
 
 ## How to use this project:
-- clone the repo
-- In terminal, at root of this directory, run `pod install` 
-- run `xed .`  in terminal to open the workspace
-- compile the program and witness the magic!
+
+1. clone this repo
+2. In terminal, at root of this directory, run `pod install` 
+3. run `xed .` in terminal to open the workspace
+4. compile the program and witness the magic!
 
 In Swift, the types which can confirm to a `Protocol` are:
 
@@ -38,17 +39,22 @@ Protocol Extensions are default implementation for Types confirming to that Prot
 
 Here, I am using Sourcery as Meta programming tool, and it's setup requires a Configuration file, and a Template file.
 
-#### The Config file: `<ProjectRoot>/.sourcery.yml`:
+#### The [Config file](.sourcery.yml): `<ProjectRoot>/.sourcery.yml`:
 
 This file contains the commands to pass to Sourcery
 
-#### The Template file: `<ProjectRoot>/<ProjectName>/SourceryTemplate/LabelSettable.stencil`:
+#### The [Template file](/PrivatePropertiesInProtocols/SourceryTemplates/LabelSettable.stencil): `<ProjectRoot>/<ProjectName>/SourceryTemplate/LabelSettable.stencil`:
 
 This file contains behaviour for the templating tool. Here is where the instruction is to copy particular piece of code to  every type implementing / confirming to a Protocol
 
+
+#### Optional: Build configuration in Xcode
+
+This command calls `sourcery --config`, as added in [this commit](https://github.com/Viranchee/PrivatePropertiesInProtocols/commit/b5b95fc70389c34686f8e4a3b6470b1d58403560)
+
 ### Step 4: Revert steps 1 and 2:
 
-Remove the field requirement alltogether from the Protocol
+Remove the field requirement altogether from the Protocol
 
 Since the field does not exist in the protocol, the protocol extension will complain of undefined field. 
 Hence to satisfy the compiler, remove that protocol extension.
@@ -76,7 +82,7 @@ I could not access the properties outside of the file.
 This led to me coming up with a good use of Sourcery to Copy Paste the implementation in every file confirming to that Protocol.
 
 ## Thank You:
-- Yogesh Singh, for mentoring and providing a platform to showcase my ideas
-- Pointfree.co, for improving my understanding of Programming, Composition, Functional Programming, Thinking about in terms of Software. 
-- Krzysztof Zablocki, for building Sourcery, a library to automate swift code generation and encouraging Meta-programming 
-- Peer reviewers for not allowing me to expose UIViews. It is because of that i am able to write this blog post :)
+- [Yogesh Singh](https://twitter.com/_yogeshsingh), for mentoring and providing a platform to showcase my ideas
+- [Pointfree.co](https://pointfree.co), for improving my understanding of Programming, Composition, Functional Programming, Thinking about in terms of Software. 
+- [Krzysztof Zablocki](https://twitter.com/merowing_), for building [Sourcery](https://github.com/krzysztofzablocki/Sourcery), a library to automate swift code generation and encouraging Meta-programming 
+- Peer reviewers for not allowing me to expose UIViews. It is because of that I am able to come up with this research and write this blog post :)
