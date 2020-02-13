@@ -1,5 +1,5 @@
-# Private Properties in Protocols
-How to make types that confirm to protocols have private fields:
+# Private Properties in Swift Protocols
+How to make types that confirm to Swift Protocols have private fields:
 
 The slides are attached in pdf format [here][slides]
 
