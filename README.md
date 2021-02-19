@@ -1,14 +1,14 @@
 # Private Properties in Swift Protocols
-How to make types that confirm to Swift Protocols have private fields:
 
-The slides are attached in pdf format [here][slides]
+How to make types that confirm to Swift Protocols have private fields
 
-## How to use this project:
+This Git repo contains 3 sources to aid you
 
-1. clone this repo
-2. In terminal, at root of this directory, run `pod install` 
-3. run `xed .` in terminal to open the workspace
-4. compile the program and witness the magic!
+1. [SLIDES][slides]
+2. [This Readme](README.md)
+3. [Working Xcode Workspace](PrivatePropertiesInProtocols.xcworkspace)
+
+## What
 
 In Swift, the types which can confirm to a `Protocol` are:
 
@@ -26,10 +26,20 @@ Once you define these fields, you can only choose them to be either of `internal
 
 However, the Swift compiler does not allow to mark a field in Protocol as `private` or `fileprivate`.
 
+But by using concepts explained here, you will be able to use `private` / `fileprivate` modifier in a Protocol.
+
+Code will be roughly equivalent to:
+
+```
+protocol ContainsAPrivateTableView {
+  private var tableView: UITableView!
+}
+```
+
 
 ## Solution:
 
-### Step 1: Make the fields you want `Private` as `Public` (or `Internal`)
+### Step 1: Mark the fields you want `Private` as `Public` (or `Internal`)
 
 ### Step 2: Write the Protocol Extension on it's Methods, utilizing those fields which you made public in Step 1
 
@@ -64,7 +74,13 @@ Mark that field in it's implementing type as `private`
 
 You have successfully implemented Private properties inside of protocols. If ever you change the field name, there will be compile time errors, which you will be forced to fix.
 
-## Practical Usage
+## How to use this project:
+
+1. clone this repo on a Mac
+2. In terminal, at root of this directory, run `pod install && xed .` to open workspace in Xcode
+3. The workspace comes preconfigured, and injects the required behavior on every compilation. So compile the project and watch the git diffs.
+
+## Practical Use Cases
 
 #### Code sharing across multiple UIViews and UIViewControllers
 
@@ -80,13 +96,15 @@ I quickly figured out that Extensions of a Type have same access control where t
 I could not access the properties outside of the file.
 This led to me coming up with a good use of Sourcery to Copy Paste the implementation in every file confirming to that Protocol.
 
-## Thanks
+## Thank You
+
 - [Yogesh Singh][yogesh], for mentoring and providing a platform to showcase my ideas
 - [Pointfree.co][pointfree], for improving my understanding of Programming, Composition, Functional Programming, Thinking about in terms of Software. 
 - [Krzysztof Zablocki][merowing], for building [sourcery], a library to automate swift code generation and encouraging Meta-programming
 
 ## For the reader
- Want me to explain you or your coworkers on benefits of using this approach, you can always drop me an [email][email] or [tweet][twitter] me.
+
+Want me to explain you or your coworkers on benefits of using this approach, you can always drop me an [email][email] or [tweet][twitter] me.
 
 Open for Speaking opportunities and Mentoring upcoming Mobile App developers🌟.
 
@@ -94,8 +112,8 @@ I have given a community talk on this topic, more details -> [here][swift-mumbai
 
 Have an idea for an iOS App? I can make you a prototype. Let's connect via [email]
 
-[twitter]: twitter.com/code_magician
-[email]: <viranchee@outlook.com>
+[twitter]: https://twitter.com/code_magician
+[email]: mailto:viranchee@outlook.com
 [sourcery]: https://github.com/krzysztofzablocki/Sourcery
 [pointfree]: https://pointfree.co
 [swift-mumbai-event]: https://www.meetup.com/SwiftMumbai/events/266462321/
